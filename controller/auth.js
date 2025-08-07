@@ -57,7 +57,7 @@ export const signup = (req, res) => {
 
 			// create a new user object
 			const newUser = {
-				userId: randomUUID,
+				userId: randomUUID(),
 				username,
 				email,
 				password: hash,
