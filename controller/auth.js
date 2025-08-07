@@ -4,7 +4,7 @@ import path from "path";
 import bcrypt from "bcrypt";
 import { randomUUID } from "crypto";
 
-const dbPath = path.join(__dirname, "../db/users.json");
+const dbPath = path.join(process.cwd(), "db", "users.json");
 
 export const signup = (req, res) => {
 	const { username, email, password } = req.body;
